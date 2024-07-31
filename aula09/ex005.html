@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;    
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p id="msg">Aprendendo a usar o <strong>DOM</strong> em JavaScript (a ser selecionado por ID)</p>
+    <p name="msg">Aprendendo a usar o <strong>DOM</strong> em JavaScript (a ser selecionado por nome)</p>
+    <p class="msg">Aprendendo a usar o <strong>DOM</strong> em JavaScript (a ser selecionado por classe)</p>
+    <div>Clique em mim</div>
+    <div id="msg">Clique em mim (a ser selecionado por query via id)</div> 
+    <div class="msg">Clique em mim (a ser selecionado por query via class)</div> 
+    <script>
+        /*Maneiras de selecionar elementos do HTML
+        por meio do JavaScript*/
+        // POR MARCA:
+        var p1 = window.document.getElementsByTagName('p')[0]
+        // POR ID:
+        var d = window.document.getElementById('msg')
+        // POR NOME:
+        var d2 = window.document.getElementsByName('msg')[0]
+        // POR CLASSE:
+        var d3 = window.document.getElementsByClassName('msg')[0]
+        // POR SELETOR:
+        var d4 = window.document.querySelector('div#msg') //#id
+        // o ID é selecionado por #
+        d4.style.color = 'black'// teste com mudança de cor da fonte
+        var d5 = window.document.querySelector('div.msg') //.classe
+        // a Classe é selecionada por . 
+        d5.style.color = 'blue'// teste com mudança de cor da fonte
+
+    </script>
+</body>
+</html>

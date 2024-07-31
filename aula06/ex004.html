@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var nome = window.prompt('Qual o seu nome?')
+        // AS DUAS MANEIRAS DE DISPOSIAÇÃO DE STRINGS
+        // usando concatenação:
+        window.alert('É um prazer te conhecer, '+ nome + '!') 
+        // usando template strings (placeholders -> ${}):
+        window.alert(`É um prazer te conhecer, ${nome}!`) 
+    
+        document.write(`Seu nome tem ${nome.length} letras<br/>`)
+        document.write(`Seu nome em maículas é ${nome.toUpperCase()}<br/>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}<br/>`)
+    </script>
+</body>
+</html>
